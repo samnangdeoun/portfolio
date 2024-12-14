@@ -8,32 +8,24 @@
             </div>
             <nav class="relative z-10 max-w-max items-center justify-center hidden flex-1 lg:flex">
                 <div class="relative">
-                    <ul class="group text-center flex flex-1 list-none items-center justify-center gap-x-1">
+                    <ul class="group text-center flex flex-1 list-none items-center justify-center gap-x-5">
                         <li>
                             <button
-                                class="group font-noto_sans  inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                                class="group font-noto_sans text-lg  inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                                 {{ $t('about_me') }}
-                                <span
-                                    class="text-center iconify i-lucide:chevron-down relative top-px ml-1 block size-3 transition duration-200 group-data-[state=open]:rotate-180"
-                                    aria-hidden="true"></span>
                             </button>
                         </li>
                         <li>
                             <button
-                                class="group inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                                class="group inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-lg transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                                 {{ $t('projects') }}
-                                <span
-                                    class="iconify i-lucide:chevron-down relative top-px ml-1 block size-3 transition duration-200 group-data-[state=open]:rotate-180"
-                                    aria-hidden="true"></span>
                             </button>
                         </li>
                         <li>
                             <button
-                                class="group inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                                class="group inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-lg transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                                 {{ $t('blog') }}
-                                <span
-                                    class="iconify i-lucide:arrow-up-right absolute right-2 top-2 text-muted-foreground"
-                                    aria-hidden="true"></span>
+
                             </button>
                         </li>
                     </ul>
