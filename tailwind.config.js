@@ -7,6 +7,10 @@ module.exports = {
   prefix: "",
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      noto_sans: ["Noto Serif Khmer", "Noto Sans Khmer", "sans-serif"],
+      mono: ["Fira Code", "monospace"],
+    },
     container: {
       center: true,
       padding: "2rem",

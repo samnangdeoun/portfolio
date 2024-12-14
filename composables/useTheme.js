@@ -17,7 +17,6 @@ export const useTheme = () => {
   };
 
   const setTheme = (newTheme) => {
-    console.log(newTheme, 'set theme');
     theme.value = newTheme;
     if (isBrowser) {
       localStorage.setItem('theme', newTheme);

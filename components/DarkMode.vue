@@ -12,7 +12,6 @@ import { useTheme } from '@/composables/useTheme';
 const { theme, setTheme } = useTheme();
 
 const switchTheme = () => {
-    console.log(theme.value === 'dark' ? 'light' : 'dark');
     setTheme(theme.value === 'dark' ? 'light' : 'dark');
 };
 </script>

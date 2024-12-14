@@ -1,9 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   pages: false,
+  ssr: false,
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@formkit/auto-animate',
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    locales: [
+      { code: 'en', language: 'en-US' },
+      { code: 'kh', language: 'kh-KH' }
+    ],
+    defaultLocale: 'en',
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
