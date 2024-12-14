@@ -7,11 +7,11 @@
         </DropdownMenuTrigger>
         <DropdownMenuContent class="w-20">
             <DropdownMenuGroup>
-                <DropdownMenuItem @click="locale = 'en'">
+                <DropdownMenuItem @click="switchLocale('en')">
                     <span>English</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem @click="locale = 'kh'">
+                <DropdownMenuItem @click="switchLocale('kh')">
                     <span>Khmer</span>
                 </DropdownMenuItem>
             </DropdownMenuGroup>
@@ -40,5 +40,12 @@ import { useI18n } from '#imports'
 
 const { locale } = useI18n()
 
-console.log(locale.value, 'locale');
+const switchLocale = (lang) => {
+    locale.value = lang
+    localStorage.setItem('locale', lang)
+}
+
+onMounted(() => {
+    switchLocale(localStorage.getItem('locale'))
+})
 </script>
