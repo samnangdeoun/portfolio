@@ -1,35 +1,18 @@
 <template>
-    <div>
-        <div class="flex items-center space-x-2">
-            <Switch :checked="darkMode" @update:checked="switchDarkMode" />
-        </div>
+    <div class="flex items-center">
+        <span class="mr-2 text-sm">{{ theme === 'dark' ? 'Light' : 'Dark' }} Mode</span>
+        <Switch :checked="theme === 'dark' ? true : false" @update:checked="switchTheme" />
     </div>
 </template>
 
+
 <script setup>
-import { Switch } from '@/components/ui/switch'
+import { useTheme } from '@/composables/useTheme';
 
-const darkMode = ref(false)
+const { theme, setTheme } = useTheme();
 
-const switchDarkMode = () => {
-    darkMode.value = !darkMode.value
-    document.documentElement.classList.toggle('dark-mode', darkMode.value)
-}
+const switchTheme = () => {
+    console.log(theme.value === 'dark' ? 'light' : 'dark');
+    setTheme(theme.value === 'dark' ? 'light' : 'dark');
+};
 </script>
-
-<style>
-body {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.dark-mode body {
-    background-color: #091a28;
-    color: #ebf4f1;
-}
-
-.sepia-mode body {
-    background-color: #f1e7d0;
-    color: #433422;
-}
-</style>
