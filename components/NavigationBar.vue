@@ -1,9 +1,9 @@
 <template>
-    <header class="sticky top-0 z-40 bg-background/80 dark:bg-[#091a28]/80 backdrop-blur-lg">
+    <header class="sticky top-0 z-40 bg-background/80 shadow-lg dark:bg-[#091a28]/90 backdrop-blur-lg">
         <div class="container max-w-screen-2xl flex h-20 items-center justify-between gap-2 px-4 md:px-8">
             <div class="hidden flex-1 md:flex">
                 <button class="router-link-active router-link-exact-active flex items-center">
-                    <span class="ml-3 self-center font-bold dark:text-white text-xl">DEOUN SAMNANG</span>
+                    <span class="ml-3 self-center font-bold uppercase font-noto_sans dark:text-white text-xl">{{ $t('deoun_samnang') }}</span>
                 </button>
             </div>
             <nav class="relative z-10 max-w-max items-center justify-center hidden flex-1 lg:flex">
