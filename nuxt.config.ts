@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     }
   },
-  pages: false,
+  pages: true,
   ssr: false,
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },

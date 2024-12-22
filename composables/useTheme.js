@@ -54,6 +54,7 @@ export const useTheme = () => {
   onUnmounted(() => {
     if (prefersDark) {
       prefersDark.removeEventListener('change', handleSystemThemeChange);
+      localStorage.removeItem('theme');
     }
   });
 
