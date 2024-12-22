@@ -3,26 +3,26 @@
         <div class="container max-w-screen-2xl flex h-20 items-center justify-between gap-2 px-4 md:px-8">
             <div class="hidden flex-1 md:flex">
                 <button class="router-link-active router-link-exact-active flex items-center">
-                    <span class="ml-3 self-center font-bold uppercase font-noto_sans dark:text-white text-xl">{{ $t('deoun_samnang') }}</span>
+                    <!-- <span class="ml-3 self-center font-bold uppercase font-noto_sans dark:text-white text-xl">{{ $t('deoun_samnang') }}</span> -->
                 </button>
             </div>
             <nav class="relative z-10 max-w-max items-center justify-center hidden flex-1 lg:flex">
                 <div class="relative">
                     <ul class="group text-center flex flex-1 list-none items-center justify-center gap-x-5">
                         <li>
-                            <button
+                            <button @click="$router.push('/about')"
                                 class="group uppercase font-bold font-noto_sans text-lg  inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none">
                                 {{ $t('about_me') }}
                             </button>
                         </li>
                         <li>
-                            <button
+                            <button @click="$router.push('/projects')"
                                 class="group  uppercase font-bold  inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-lg transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none">
                                 {{ $t('projects') }}
                             </button>
                         </li>
                         <li>
-                            <button
+                            <button @click="$router.push('/blog')"
                                 class="group  uppercase font-bold  inline-flex font-noto_sans h-10 w-max items-center justify-center rounded-md px-4 py-2 text-lg transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none">
                                 {{ $t('blog') }}
 
