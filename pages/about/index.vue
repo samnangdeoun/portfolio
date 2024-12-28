@@ -20,9 +20,5 @@ const paragraphs = ref([
         about_me: "I am a software engineer",
         about_me_kh: "ខ្ញុំជាអ្នកអ្នកអប់ស",
     },
-    {
-        about_me: "I am a software engineer",
-        about_me_kh: "ខ្ញុំជាអ្នកអ្នកអប់ស",
-    },
 ])
 </script>
